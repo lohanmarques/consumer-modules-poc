@@ -1,19 +1,29 @@
 source 'https://github.com/CocoaPods/Specs.git'
-source 'git@github.com:lohanmarques/provider-modules-poc.git'
+source 'https://github.com/lohanmarques/provider-modules-poc.git'
+source 'git@github.com:globoi/pods-repository.git'
 
-platform :ios, '9.0'
+platform :ios, '11.0'
+
+use_frameworks!
+inhibit_all_warnings!
+
+def private_pods
+  pod 'VideoQuality', :path => '../modules/VideoQuality'
+end
+
+def globo_pods
+  pod 'PlayKitGlobo', '3.1.12'
+  pod 'Playkit', '1.5.30'
+end
 
 target 'consumer' do
-  use_frameworks!
+  private_pods
+end
 
-  pod 'VideoQuality'
+target 'consumerTests' do
+  inherit! :search_paths
+end
 
-  target 'consumerTests' do
-    inherit! :search_paths
-  end
-
-  target 'consumerUITests' do
-    
-  end
-
+target 'consumerUITests' do
+  inherit! :search_paths
 end

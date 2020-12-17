@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VideoQualityViewController" customModule="consumer" customModuleProvider="target">
+            <connections>
+                <outlet property="selectedOption" destination="pfg-or-vvF" id="e0W-zO-MlC"/>
+                <outlet property="view" destination="iN0-l3-epB" id="muR-0k-zvh"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pfg-or-vvF">
+                    <rect key="frame" x="200.5" y="435" width="13.5" height="36"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vZN-mZ-7Fi">
+                    <rect key="frame" x="115.5" y="552" width="183" height="42"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <state key="normal" title="Trocar Qualidade"/>
+                    <connections>
+                        <action selector="changeQuality:" destination="-1" eventType="touchUpInside" id="bOi-UV-m62"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="pfg-or-vvF" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="GiT-QN-MH5"/>
+                <constraint firstItem="vZN-mZ-7Fi" firstAttribute="centerX" secondItem="pfg-or-vvF" secondAttribute="centerX" id="LPk-xm-1M5"/>
+                <constraint firstItem="pfg-or-vvF" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="QlQ-6p-thE"/>
+                <constraint firstItem="vZN-mZ-7Fi" firstAttribute="top" secondItem="pfg-or-vvF" secondAttribute="bottom" constant="81" id="UjA-Sg-eUN"/>
+            </constraints>
+            <point key="canvasLocation" x="140.57971014492756" y="62.946428571428569"/>
+        </view>
+    </objects>
+</document>

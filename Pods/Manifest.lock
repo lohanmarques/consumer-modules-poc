@@ -1,0 +1,16 @@
+PODS:
+  - VideoQuality (1.0.1)
+
+DEPENDENCIES:
+  - VideoQuality (from `../modules/VideoQuality`)
+
+EXTERNAL SOURCES:
+  VideoQuality:
+    :path: "../modules/VideoQuality"
+
+SPEC CHECKSUMS:
+  VideoQuality: eac97e8097efc14e50819c8e24780832b7ae62d6
+
+PODFILE CHECKSUM: 3d5c56e39ebd82e59f0160459a2cd351f45bb642
+
+COCOAPODS: 1.10.0
