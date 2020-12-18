@@ -8,7 +8,7 @@ use_frameworks!
 inhibit_all_warnings!
 
 def private_pods
-  pod 'VideoQuality', :path => '../modules/VideoQuality'
+  pod 'PayTVModules/VideoQuality'
 end
 
 def globo_pods
