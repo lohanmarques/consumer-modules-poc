@@ -1,24 +1,25 @@
 {
   "name": "VideoQuality",
-  "version": "1.0.1",
-  "summary": "Qualidade do vídeo",
-  "description": "Caso de uso para mudança da qualidade do vídeo",
+  "version": "1.0.5",
+  "summary": "VideoQuality",
+  "description": "VideoQuality Description",
   "homepage": "https://github.com/lohanmarques/provider-modules-poc",
   "source": {
     "git": "https://github.com/lohanmarques/provider-modules-poc.git",
-    "tag": "1.0.1"
+    "tag": "1.0.5"
   },
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "Globo Comunicação e Participações S.A": "https://www.globo.com/"
+    "Globo Comunicação e Participações spec.A": "https://www.globo.com/"
   },
   "platforms": {
     "ios": "11.0"
   },
   "swift_versions": "5.0",
+  "module_name": "VideoQuality",
   "source_files": "VideoQuality/**/*.{h,m,swift}",
   "exclude_files": "VideoQuality/VideoQualityTests/**/*",
   "swift_version": "5.0"

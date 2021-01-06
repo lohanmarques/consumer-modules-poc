@@ -33,9 +33,8 @@ class VideoQualityViewController: UIViewController {
     }
 }
 
-extension VideoQualityViewController: VideoQualityPresenterOutput {
-    
-    func showVideoQuality(with selectedOption: VideoQualityType) {
-        self.selectedOption.text = selectedOption.rawValue
+extension VideoQualityViewController: VideoQualityContractOutput {
+    func didChangeVideoQuality(new type: VideoQualityType) {
+        self.selectedOption.text = type.rawValue
     }
 }

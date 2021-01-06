@@ -1,2 +1,3 @@
 ${PODS_ROOT}/Target Support Files/Pods-consumer/Pods-consumer-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Version/Version.framework
 ${BUILT_PRODUCTS_DIR}/VideoQuality/VideoQuality.framework

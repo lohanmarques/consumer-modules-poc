@@ -1,1 +1,2 @@
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Version.framework
 ${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VideoQuality.framework

@@ -1,6 +1,6 @@
 source 'https://github.com/CocoaPods/Specs.git'
-source 'https://github.com/lohanmarques/provider-modules-poc.git'
 source 'git@github.com:globoi/pods-repository.git'
+# source 'https://github.com/lohanmarques/provider-modules-poc.git'
 
 platform :ios, '11.0'
 
@@ -8,7 +8,8 @@ use_frameworks!
 inhibit_all_warnings!
 
 def private_pods
-  pod 'PayTVModules/VideoQuality'
+  pod 'Version',      :git => 'https://github.com/lohanmarques/provider-modules-poc.git', :branch => 'test' #, :path => '../provider-modules-poc/'
+  pod 'VideoQuality', :git => 'https://github.com/lohanmarques/provider-modules-poc.git', :branch => 'test' #, :path => '../provider-modules-poc/'
 end
 
 def globo_pods

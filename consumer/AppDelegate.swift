@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Version
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,6 +16,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         VideoQualityRouter().present(in: &self.window)
+
+        // Testing Version import
+        let someClass = SomeClass()
+        print(someClass)
+
+        //
         return true
     }
 }

@@ -5,12 +5,10 @@ import VideoQuality
 
 final class VideoQualityPresenterBuilder {
     
-    static func make(identifier: String, storage: UserDefaults) -> VideoQualityPresenter {
-        let interactor = VideoQualityInteractorBuilder.make(identifier: identifier, storage: storage)
+    static func make(output: VideoQualityContractOutput, identifier: String, storage: UserDefaults) -> VideoQualityPresenter {
+        let interactor = VideoQualityInteractorBuilder.make(output: output, identifier: identifier, storage: storage)
         let presenter = VideoQualityPresenter(interactor: interactor)
-        
-        interactor.output = presenter
-        
+
         return presenter
     }
 }
